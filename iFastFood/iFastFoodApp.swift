@@ -11,7 +11,7 @@ import SwiftUI
 struct iFastFoodApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainMenuListView()
         }
     }
 }
