@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct MenuModel: Codable {
+struct MenuModel: Codable, Identifiable {
     let id: UUID
-    let name: String
-    let items: [MenuDishes]
+    let name: String // nombre secciones
+    let items: [MenuDishes] // platos de cada sección
 }
 
 struct MenuDishes: Codable {
