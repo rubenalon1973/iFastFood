@@ -9,8 +9,8 @@ import Foundation
 
 
 extension Bundle {
-    func decode<T: Codable>(type: T.Type, from file: String) -> T {
-        guard let url = self.url(forResource: file, withExtension: nil) else {
+    func decode<T: Codable>(type: T.Type, from file: String) -> T { // file pq no sale en la llamada a la fx
+        guard let url = self.url(forResource: file, withExtension: nil) else { //nil?
             fatalError("Failed to get to url: \(file) from Bundle")
         }
         
@@ -23,7 +23,7 @@ extension Bundle {
         guard let myData = try? decoder.decode(T.self, from: data) else {
             fatalError("Failed decoding data")
         }
-        
         return myData
     }
 }
+

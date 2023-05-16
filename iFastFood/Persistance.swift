@@ -13,7 +13,7 @@ final class Persistence {
 //        MARK: WAY WITHOUT EXTENSION
 //    let url = Bundle.main.url(forResource: "menu", withExtension: "json")!
     
-    private init(){}
+    private init(){} //para que haya una única instancia
     
     func fetchData() throws -> [MenuModel] {
 //        MARK: WAY WITHOUT EXTENSION

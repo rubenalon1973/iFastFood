@@ -22,8 +22,8 @@ struct MainMenuListView: View {
         }
     }
 }
-    struct MainMenuListView_Previews: PreviewProvider {
-        static var previews: some View {
-            MainMenuListView()
-        }
+struct MainMenuListView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainMenuListView()
     }
+}
