@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct iFastFoodApp: App {
+    @StateObject var vm = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
             MainMenuListView()
+                .environmentObject(vm)
         }
     }
 }

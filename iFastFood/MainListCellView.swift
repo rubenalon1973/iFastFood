@@ -18,7 +18,7 @@ struct MainListCellView: View {
     var body: some View {
         HStack {
             Image(menuDish.thumbnailImage)
-//                .clipShape(Circle())
+            //                .clipShape(Circle())
                 .cornerRadius(50)
                 .overlay(Circle().stroke(Color.gray, lineWidth: 2))// aro resaltado
             VStack(alignment: .leading) {
@@ -26,7 +26,7 @@ struct MainListCellView: View {
                 Text("$\(menuDish.price)")
             }
             Spacer()
-//            .self pq no podemos conformarlo a identifiable
+            //            .self pq no podemos conformarlo a identifiable
             ForEach(menuDish.restrictions, id: \.self) { restriction in
                 Text(restriction)
                     .font(.caption)
@@ -36,7 +36,6 @@ struct MainListCellView: View {
                     .clipShape(Circle())
                     .foregroundColor(.white)
             }
-            
         }
     }
 }

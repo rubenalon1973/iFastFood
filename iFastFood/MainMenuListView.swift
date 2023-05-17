@@ -8,22 +8,30 @@
 import SwiftUI
 
 struct MainMenuListView: View {
-    @ObservedObject var vm = ViewModel()
+    @EnvironmentObject var vm: ViewModel
     
     var body: some View {
-        List {
-            ForEach(vm.menuItems) { section in
-                Section(section.name) {
-                    ForEach(section.items) { item in
-                        MainListCellView(menuDish: item)
+        NavigationView {
+            List {
+                ForEach(vm.menuItems) { section in
+                    Section(section.name) {
+                        ForEach(section.items.filter { $0.name.localizedCaseInsensitiveContains(vm.search) || vm.search.isEmpty }) { item in
+                            NavigationLink(destination: ListViewDetalil(dish: item)) {
+                                MainListCellView(menuDish: item)
+                            }
+                        }
                     }
                 }
+                .searchable(text: $vm.search)
+                .navigationTitle("Menu")
             }
         }
     }
-}
-struct MainMenuListView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainMenuListView()
+    
+    struct MainMenuListView_Previews: PreviewProvider {
+        static var previews: some View {
+            MainMenuListView()
+                .environmentObject(ViewModel())
+        }
     }
 }
