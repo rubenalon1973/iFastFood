@@ -11,27 +11,33 @@ struct MainMenuListView: View {
     @EnvironmentObject var vm: ViewModel
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(vm.menuItems) { section in
                     Section(section.name) {
-                        ForEach(section.items.filter { $0.name.localizedCaseInsensitiveContains(vm.search) || vm.search.isEmpty }) { item in
-                            NavigationLink(destination: ListViewDetalil(dish: item)) {
-                                MainListCellView(menuDish: item)
+                        ForEach(section.items) { dish in
+                            if vm.showDish(dish: dish) {
+                                NavigationLink(value: dish) {
+                                    MainListCellView(menuDish: dish)
+                                }
                             }
                         }
                     }
                 }
-                .searchable(text: $vm.search)
-                .navigationTitle("Menu")
             }
-        }
-    }
-    
-    struct MainMenuListView_Previews: PreviewProvider {
-        static var previews: some View {
-            MainMenuListView()
-                .environmentObject(ViewModel())
+            .animation( .spring(), value: vm.search)
+            .searchable(text: $vm.search)
+            .navigationDestination(for: MenuDishes.self) { dish in
+                ListViewDetalil(dish: dish)
+            }
+            .navigationTitle("Menu")
         }
     }
 }
+struct MainMenuListView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainMenuListView()
+            .environmentObject(ViewModel())
+    }
+}
+

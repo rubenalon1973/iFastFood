@@ -16,17 +16,21 @@ import Foundation
 
 import Foundation
 
+// menu en su conjunto
 struct MenuModel: Codable, Identifiable {
     let id: UUID
-    let name: String // nombre secciones
-    let items: [MenuDishes] // platos de cada sección
+    // nombre secciones
+    let name: String
+    // platos de cada sección agrupados
+    let items: [MenuDishes]
 }
-
+// prop de cada plato:
 struct MenuDishes: Codable, Identifiable, Hashable {
     let id: UUID
     let name: String
     let photoCredit: String
     let price: Int
+//    restricciones dietéticas
     let restrictions: [String]
     let description: String
     //    para imágenes de los platos
@@ -34,11 +38,12 @@ struct MenuDishes: Codable, Identifiable, Hashable {
     var mainImage: String {
         name.replacingOccurrences(of: " ", with: "-").lowercased()
     }
+    // para añadir al final lo de las otras imágenes
     var thumbnailImage: String {
-        mainImage.appending("-thumb")// para añadir al final lo de las otras imágenes
+        mainImage.appending("-thumb")
     }
 }
-
+// para hacer las pruebas con un plato de ejemplo, y mostrar datos de muestra antes de llevar a producción
 extension MenuDishes {
     static let previewDish = MenuDishes(id: UUID(), name: "Maple French Toast", photoCredit: "Joseph Gonzalez", price: 6, restrictions: ["G", "V"], description: "Sweet, fluffy, and served piping hot, our French toast is flown in fresh every day from Maple City, Canada, which is where all maple syrup in the world comes from. And if you believe that, we have some land to sell you…")
 }

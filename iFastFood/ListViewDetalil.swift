@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListViewDetalil: View {
-    
+    @EnvironmentObject var vm: ViewModel
     let dish: MenuDishes //para acceder a prop. de menudishes
     
     var body: some View {
@@ -30,7 +30,7 @@ struct ListViewDetalil: View {
                 .padding()
             
             Button {
-                
+                vm.addDishToOrder(dish: dish)
             } label: {
                 Text("Order This")
             }
