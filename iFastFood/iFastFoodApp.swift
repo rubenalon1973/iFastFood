@@ -18,9 +18,10 @@ struct iFastFoodApp: App {
 //        crea grupo de vtanas para la app
         WindowGroup {
 //            creamos una inst de MainMenuListView q se mostrará en la view principal, con su contenido
-            MainMenuListView()
+            MainTabView()
 //            la inst de vm estará disp en toda la app, y MainMenuListView podrá acceder al ViewModel y se actualice cdo haya cambios en las prop @published
                 .environmentObject(vm)
+            //            .preferredColorScheme( .dark)//siempre en black todas las view
         }
     }
 }
