@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ListViewDetalil: View {
-    @EnvironmentObject var vm: ViewModel
+//    @EnvironmentObject var vm: ViewModel
+    @EnvironmentObject var vmOrder: OrderViewModel
+    
     let dish: MenuDishes //para acceder a prop. de menudishes
     
     var body: some View {
@@ -30,7 +32,7 @@ struct ListViewDetalil: View {
                 .padding()
             
             Button {
-                vm.addDishToOrder(dish: dish)
+                vmOrder.addDishToOrder(dish: dish)
             } label: {
                 Text("Order This")
             }
@@ -47,6 +49,7 @@ struct ListViewDetalil_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             ListViewDetalil(dish: .previewDish)
+                .environmentObject(OrderViewModel())
         }
     }
 }

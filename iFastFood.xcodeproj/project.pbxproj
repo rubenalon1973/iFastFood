@@ -10,9 +10,11 @@
 		8058D48F2A10D4730028F422 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058D48E2A10D4730028F422 /* ViewModel.swift */; };
 		8058D4912A10E4690028F422 /* MainMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058D4902A10E4690028F422 /* MainMenuListView.swift */; };
 		8058D4932A10EBDD0028F422 /* MainListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058D4922A10EBDD0028F422 /* MainListCellView.swift */; };
+		806D51242A1E601000E14D5A /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D51232A1E601000E14D5A /* OrderViewModel.swift */; };
 		807120EF2A13D64200123963 /* ListViewDetalil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807120EE2A13D64200123963 /* ListViewDetalil.swift */; };
-		80C8F46F2A1A05FB005954F3 /* OrdeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8F46E2A1A05FB005954F3 /* OrdeListView.swift */; };
+		80C8F46F2A1A05FB005954F3 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8F46E2A1A05FB005954F3 /* OrderListView.swift */; };
 		80C8F4712A1A184C005954F3 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8F4702A1A184C005954F3 /* MainTabView.swift */; };
+		80C8F4732A1A264A005954F3 /* ConfirmOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8F4722A1A264A005954F3 /* ConfirmOrderView.swift */; };
 		80CFA6892A0BE50C004D505D /* iFastFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CFA6882A0BE50C004D505D /* iFastFoodApp.swift */; };
 		80CFA68D2A0BE50E004D505D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA68C2A0BE50E004D505D /* Assets.xcassets */; };
 		80CFA6902A0BE50E004D505D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA68F2A0BE50E004D505D /* Preview Assets.xcassets */; };
@@ -46,9 +48,11 @@
 		8058D48E2A10D4730028F422 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8058D4902A10E4690028F422 /* MainMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuListView.swift; sourceTree = "<group>"; };
 		8058D4922A10EBDD0028F422 /* MainListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListCellView.swift; sourceTree = "<group>"; };
+		806D51232A1E601000E14D5A /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		807120EE2A13D64200123963 /* ListViewDetalil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewDetalil.swift; sourceTree = "<group>"; };
-		80C8F46E2A1A05FB005954F3 /* OrdeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdeListView.swift; sourceTree = "<group>"; };
+		80C8F46E2A1A05FB005954F3 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		80C8F4702A1A184C005954F3 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		80C8F4722A1A264A005954F3 /* ConfirmOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOrderView.swift; sourceTree = "<group>"; };
 		80CFA6852A0BE50C004D505D /* iFastFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFastFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CFA6882A0BE50C004D505D /* iFastFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFastFoodApp.swift; sourceTree = "<group>"; };
 		80CFA68C2A0BE50E004D505D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				8058D48E2A10D4730028F422 /* ViewModel.swift */,
+				806D51232A1E601000E14D5A /* OrderViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -177,11 +182,12 @@
 		80CFA6B52A0BE6D2004D505D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				80C8F4702A1A184C005954F3 /* MainTabView.swift */,
 				8058D4902A10E4690028F422 /* MainMenuListView.swift */,
 				8058D4922A10EBDD0028F422 /* MainListCellView.swift */,
 				807120EE2A13D64200123963 /* ListViewDetalil.swift */,
-				80C8F46E2A1A05FB005954F3 /* OrdeListView.swift */,
-				80C8F4702A1A184C005954F3 /* MainTabView.swift */,
+				80C8F46E2A1A05FB005954F3 /* OrderListView.swift */,
+				80C8F4722A1A264A005954F3 /* ConfirmOrderView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -341,13 +347,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80C8F46F2A1A05FB005954F3 /* OrdeListView.swift in Sources */,
+				80C8F46F2A1A05FB005954F3 /* OrderListView.swift in Sources */,
 				80CFA6C02A0BFC55004D505D /* Extensions.swift in Sources */,
 				80CFA6BD2A0BE8B4004D505D /* MenuModel.swift in Sources */,
+				806D51242A1E601000E14D5A /* OrderViewModel.swift in Sources */,
 				8058D4912A10E4690028F422 /* MainMenuListView.swift in Sources */,
 				80CFA6892A0BE50C004D505D /* iFastFoodApp.swift in Sources */,
 				8058D4932A10EBDD0028F422 /* MainListCellView.swift in Sources */,
 				8058D48F2A10D4730028F422 /* ViewModel.swift in Sources */,
+				80C8F4732A1A264A005954F3 /* ConfirmOrderView.swift in Sources */,
 				807120EF2A13D64200123963 /* ListViewDetalil.swift in Sources */,
 				80CFA6BA2A0BE862004D505D /* Persistance.swift in Sources */,
 				80C8F4712A1A184C005954F3 /* MainTabView.swift in Sources */,

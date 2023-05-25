@@ -14,9 +14,9 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Menu", systemImage: "list.dash")
                 }
-            OrdeListView()
+            OrderListView()
                 .tabItem {
-                    Label("Ordered ", systemImage: "square.and.pencil")
+                    Label("Ordered", systemImage: "square.and.pencil")
                 }
         }
     }
@@ -26,6 +26,6 @@ struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
             .environmentObject(ViewModel())
-
+            .environmentObject(OrderViewModel())
     }
 }

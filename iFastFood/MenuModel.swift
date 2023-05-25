@@ -30,7 +30,7 @@ struct MenuDishes: Codable, Identifiable, Hashable {
     let name: String
     let photoCredit: String
     let price: Int
-//    restricciones dietéticas
+    //    restricciones dietéticas
     let restrictions: [String]
     let description: String
     //    para imágenes de los platos

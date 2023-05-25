@@ -16,20 +16,10 @@ final class ViewModel: ObservableObject {
 //    estas prop emiten señales, son observables, y cdo cambien notificarán a las view
     @Published var menuItems: [MenuModel] = []//accedemos a los element de menumodel
     @Published var search = ""//la barra de búsqueda del usuario en la app
-//var calculada para filtrar los platos según el criterio metido en search
-    @Published var orderedDishes: [MenuDishes] = []
-    var filteredDishes: [MenuDishes] {
-        if search.isEmpty {
-//            FIXME: Pendiente revisar como fx flatmap
-            return menuItems.flatMap { $0.items }//si no se le pide nada dev []
-        } else {
-            return menuItems.flatMap { $0.items }.filter {
-                $0.name.localizedCaseInsensitiveContains(search)
-            }
-        }
-    }
-//    vamos a la fx fetchData a través de persistence para acceder a los datos, si hay algún fallo -> []
+
+//el init arranca al crear una instancia de la clase y ejecuta la fx fechData
     init() {
+        //    vamos a la fx fetchData a través de persistence para acceder a los datos, si hay algún fallo -> []
         do {
             menuItems = try persistence.fetchData()
         } catch {
@@ -37,21 +27,11 @@ final class ViewModel: ObservableObject {
             menuItems = []
         }
     }
+//    si la búsqueda está vacía = true, y si contiene algo se la compara con el name del plato = true, sino = false //MARK: NO ENTIENDO MUY BIEN, CREO, SOBRE CONTAINS
     func showDish(dish: MenuDishes) -> Bool {
         search.isEmpty || dish.name.lowercased().contains(search.lowercased())
     }
-    
-    func addDishToOrder(dish: MenuDishes) {
-        orderedDishes.append(dish)
-        print(orderedDishes)
-    }
 }
-
-
-
-
-
-
 
 //el ViewModel se encarga de cargar los datos del menú, tiene una propiedad para realizar búsquedas y filtrar los platos del menú, y notifica a las vistas cuando los datos cambian para que se actualicen automáticamente.
 
