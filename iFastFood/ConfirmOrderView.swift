@@ -49,13 +49,12 @@ struct ConfirmOrderView: View {
                     Text("Confirm Payment")
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
-                .buttonStyle(.bordered)
+                .buttonStyle(.borderedProminent)
             }
             .frame(maxWidth: .infinity, alignment: .center)
             .listRowBackground(Color.clear)
         }
         .alert("Payment confirmed!", isPresented: $showAlert) {
-            
         } message: {
             VStack {
                 Text("Your total was \(orderVM.totalPay(percentage: tipAmount))€ - Thank you")

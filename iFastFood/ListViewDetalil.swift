@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ListViewDetalil: View {
-//    @EnvironmentObject var vm: ViewModel
     @EnvironmentObject var vmOrder: OrderViewModel
     
     let dish: MenuDishes //para acceder a prop. de menudishes
@@ -37,7 +36,6 @@ struct ListViewDetalil: View {
                 Text("Order This")
             }
             .buttonStyle(.borderedProminent)
-            
             Spacer()
         }
         .navigationTitle(dish.name)
