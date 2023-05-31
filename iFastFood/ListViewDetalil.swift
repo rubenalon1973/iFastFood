@@ -10,7 +10,7 @@ import SwiftUI
 struct ListViewDetalil: View {
     @EnvironmentObject var vmOrder: OrderViewModel
     
-    let dish: MenuDishes //para acceder a prop. de menudishes
+    let dish: MenuDishes
     
     var body: some View {
         VStack {

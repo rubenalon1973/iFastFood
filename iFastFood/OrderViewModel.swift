@@ -26,6 +26,6 @@ final class OrderViewModel: ObservableObject {
     func totalPay(percentage: Int) -> String {
         let totalPrice = orderedDishes.reduce(0.0) { $0 + Double($1.price) }
         let tipAmount = totalPrice * Double(percentage) / 100.0
-        return String(format: "%.2f", (totalPrice + tipAmount)) //redondeamos a dos decimales
+        return String(format: "%.2f", (totalPrice + tipAmount))
     }
 }

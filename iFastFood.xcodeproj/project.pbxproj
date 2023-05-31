@@ -12,13 +12,14 @@
 		8058D4932A10EBDD0028F422 /* MainListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058D4922A10EBDD0028F422 /* MainListCellView.swift */; };
 		806D51242A1E601000E14D5A /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D51232A1E601000E14D5A /* OrderViewModel.swift */; };
 		807120EF2A13D64200123963 /* ListViewDetalil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807120EE2A13D64200123963 /* ListViewDetalil.swift */; };
+		80C27D032A26565E00E68061 /* OrderViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C27D022A26565E00E68061 /* OrderViewModelTest.swift */; };
 		80C8F46F2A1A05FB005954F3 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8F46E2A1A05FB005954F3 /* OrderListView.swift */; };
 		80C8F4712A1A184C005954F3 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8F4702A1A184C005954F3 /* MainTabView.swift */; };
 		80C8F4732A1A264A005954F3 /* ConfirmOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C8F4722A1A264A005954F3 /* ConfirmOrderView.swift */; };
 		80CFA6892A0BE50C004D505D /* iFastFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CFA6882A0BE50C004D505D /* iFastFoodApp.swift */; };
 		80CFA68D2A0BE50E004D505D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA68C2A0BE50E004D505D /* Assets.xcassets */; };
 		80CFA6902A0BE50E004D505D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA68F2A0BE50E004D505D /* Preview Assets.xcassets */; };
-		80CFA69A2A0BE50E004D505D /* iFastFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CFA6992A0BE50E004D505D /* iFastFoodTests.swift */; };
+		80CFA69A2A0BE50E004D505D /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CFA6992A0BE50E004D505D /* ViewModelTests.swift */; };
 		80CFA6A42A0BE50E004D505D /* iFastFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CFA6A32A0BE50E004D505D /* iFastFoodUITests.swift */; };
 		80CFA6A62A0BE50E004D505D /* iFastFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CFA6A52A0BE50E004D505D /* iFastFoodUITestsLaunchTests.swift */; };
 		80CFA6B72A0BE703004D505D /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA6B62A0BE703004D505D /* menu.json */; };
@@ -50,6 +51,7 @@
 		8058D4922A10EBDD0028F422 /* MainListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListCellView.swift; sourceTree = "<group>"; };
 		806D51232A1E601000E14D5A /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		807120EE2A13D64200123963 /* ListViewDetalil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewDetalil.swift; sourceTree = "<group>"; };
+		80C27D022A26565E00E68061 /* OrderViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModelTest.swift; sourceTree = "<group>"; };
 		80C8F46E2A1A05FB005954F3 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		80C8F4702A1A184C005954F3 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		80C8F4722A1A264A005954F3 /* ConfirmOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOrderView.swift; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		80CFA68C2A0BE50E004D505D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80CFA68F2A0BE50E004D505D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80CFA6952A0BE50E004D505D /* iFastFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFastFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		80CFA6992A0BE50E004D505D /* iFastFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFastFoodTests.swift; sourceTree = "<group>"; };
+		80CFA6992A0BE50E004D505D /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		80CFA69F2A0BE50E004D505D /* iFastFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFastFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CFA6A32A0BE50E004D505D /* iFastFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFastFoodUITests.swift; sourceTree = "<group>"; };
 		80CFA6A52A0BE50E004D505D /* iFastFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFastFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -148,7 +150,8 @@
 		80CFA6982A0BE50E004D505D /* iFastFoodTests */ = {
 			isa = PBXGroup;
 			children = (
-				80CFA6992A0BE50E004D505D /* iFastFoodTests.swift */,
+				80CFA6992A0BE50E004D505D /* ViewModelTests.swift */,
+				80C27D022A26565E00E68061 /* OrderViewModelTest.swift */,
 			);
 			path = iFastFoodTests;
 			sourceTree = "<group>";
@@ -366,7 +369,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80CFA69A2A0BE50E004D505D /* iFastFoodTests.swift in Sources */,
+				80CFA69A2A0BE50E004D505D /* ViewModelTests.swift in Sources */,
+				80C27D032A26565E00E68061 /* OrderViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

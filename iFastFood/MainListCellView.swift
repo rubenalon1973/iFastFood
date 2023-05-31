@@ -18,15 +18,13 @@ struct MainListCellView: View {
     var body: some View {
         HStack {
             Image(menuDish.thumbnailImage)
-            //                .clipShape(Circle())
                 .cornerRadius(50)
-                .overlay(Circle().stroke(Color.gray, lineWidth: 2))// aro resaltado
+                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
             VStack(alignment: .leading) {
                 Text(menuDish.name)
-                Text("$\(menuDish.price)")
+                Text("\(menuDish.price)€")
             }
             Spacer()
-            //            .self pq no podemos conformarlo a identifiable
             ForEach(menuDish.restrictions, id: \.self) { restriction in
                 Text(restriction)
                     .font(.caption)
